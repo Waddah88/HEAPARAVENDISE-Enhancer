@@ -2,8 +2,11 @@ import cv2
 import numpy as np
 import streamlit as st
 
-st.set_page_config(page_title="أداة تحسين وتصفية الصور المتقدمة", layout="centered")
-st.markdown("<h2 style='text-align: center;'>أداة تحسين وتصفية الصور الاحترافية</h2>", unsafe_allow_html=True)
+# تغيير اسم علامة التبويب في المتصفح إلى الاسم الجديد
+st.set_page_config(page_title="Heaparavendise Enhancer", layout="centered")
+
+# تغيير العنوان الرئيسي للتطبيق في أعلى الصفحة
+st.markdown("<h2 style='text-align: center;'>Heaparavendise Enhancer</h2>", unsafe_allow_html=True)
 
 def enhance_image(input_img, contrast_level, noise_level, sharp_level):
     if input_img is None: return None
